@@ -5,7 +5,8 @@ import { SegundaPaginaComponent } from './segunda-pagina/segunda-pagina.componen
 
 const routes: Routes = [
    { path:"primeira-pagina", component: PrimeiraPaginaComponent },
-   { path:"segunda-pagina", component: SegundaPaginaComponent}
+   { path:"segunda-pagina", component: SegundaPaginaComponent},
+   { path:"",redirectTo: "primeira-pagina", pathMatch: "full"}
 ]
 
 
