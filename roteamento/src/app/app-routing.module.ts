@@ -10,6 +10,7 @@ const routes: Routes = [
    { path:"segunda-pagina", component: SegundaPaginaComponent},
    { path:"",redirectTo: "primeira-pagina", pathMatch: "full"},
    { path:"pagina-com-parametro/:id", component: PaginaComParametroComponent},
+   { path: 'lazy-loading', loadChildren: () => import('./lazy-loading/lazy-loading.module').then(m => m.LazyLoadingModule) },
    { path:"**", component: PaginaNaoEncontradaComponent}
 ]
 
