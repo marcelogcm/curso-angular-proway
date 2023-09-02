@@ -11,12 +11,12 @@ export class ProdutosComponent implements OnInit {
   produtos: IProduto[] | undefined;
 
   constructor(
-
     private produtosService: ProdutosService
   ){}
 
-  ngOnInit(): void{
-    this.produtos = this.produtosService.getAll();
+  ngOnInit(): void {
+      this.produtos = this.produtosService.getAll();
   }
 
 }
+
