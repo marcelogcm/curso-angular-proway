@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: "", redirectTo:"produtos", pathMatch:"full"},
   { path: 'nao-encontrada', component: NaoEncontradaComponent },
   { path: 'carrinho', loadChildren: () => import('./carrinho/carrinho.module').then(m => m.CarrinhoModule) },
+  { path: 'contato', loadChildren: () => import('./contato/contato.module').then(m => m.ContatoModule) },
   { path: '**', redirectTo: 'nao-encontrada' } // Redirecionar para 'nao-encontrada' se a rota não for encontrada
 
 ];
