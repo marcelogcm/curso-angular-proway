@@ -6,10 +6,10 @@
   <nav class="main-header__menu">
     <ul>
       <li>
-        <a href="produtos">Produtos</a>
+        <a routerLink="produtos">Produtos</a>
       </li>
       <li>
-        <a href="carrinho">
+        <a routerLink="carrinho">
           <i class="fa-solid fa-cart-shopping"></i>
           Carrinho
           <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
@@ -17,7 +17,7 @@
         </a>
       </li>
       <li>
-        <a href="contato">Contato</a>
+        <a routerLink="contato">Contato</a>
       </li>
       <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
       <li><a><i class="fa-brands fa-instagram"></i></a></li>
@@ -25,9 +25,6 @@
       <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
     </ul>
   </nav>
-  <form class="search-form">
-    <input type="text">
-    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-  </form>
+  <app-barra-pesquisa></app-barra-pesquisa>
 </div>
 </header>

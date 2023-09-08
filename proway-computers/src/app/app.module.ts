@@ -12,7 +12,9 @@ import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.componen
 import { NgxMaskDirective } from 'ngx-mask';
 import { NgxMaskPipe } from 'ngx-mask';
 import { provideNgxMask } from 'ngx-mask';
-import { IConfig } from 'ngx-mask'
+import { IConfig } from 'ngx-mask';
+import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component'
+import { FormsModule } from '@angular/forms';
 
 const maskConfig: Partial<IConfig> = {
   validation: false,
@@ -25,7 +27,8 @@ const maskConfig: Partial<IConfig> = {
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NaoEncontradaComponent
+    NaoEncontradaComponent,
+    BarraPesquisaComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ const maskConfig: Partial<IConfig> = {
     BrowserAnimationsModule,
     MatSnackBarModule,
     NgxMaskDirective,
-    NgxMaskPipe
+    NgxMaskPipe,
+    FormsModule
    
  
     
